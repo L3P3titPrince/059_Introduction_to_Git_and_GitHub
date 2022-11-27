@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#import shutil
+import shutil
 
 def check_dis_usage(disk, min_absolute, min_percent):
     """Returns True if there is enough free disk space, false otherwise"""
