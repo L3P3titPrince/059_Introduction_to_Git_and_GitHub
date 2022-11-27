@@ -20,4 +20,4 @@ if not check_dis_usage("/", 2*2**30, 10):
     sys.exit(1)
 
 print("Everything OK")
-return 0
+#return 0
