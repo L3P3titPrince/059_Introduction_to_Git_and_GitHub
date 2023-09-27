@@ -1,0 +1,9 @@
+# ignore the MAC addtional files
+.DS_STORE
+
+# ignore the some python script
+001.py
+002.py
+
+# ignore the 020*.py
+020*.py
