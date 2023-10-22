@@ -1,12 +1,24 @@
 ## Table of Contents
-- [Initialize Git](#initialize-git)
+
+**[1.Summary](#summary)**
+
+**[2.Initialize Git](#h2)**
     - [Skip Staging](#skip-staging)
     - [delete and rename](#5delete-and-rename)
 - [Initialize GitHub](#initialize-github)
 - [End](#end)
 
+----------------------------------
+<div id="summary"></div>
 
-copy the orignial one with a new underscore copy for comparsine
+# 1. Summary
+
+[Couseara](https://www.coursera.org/learn/introduction-git-github/home/module/1) 
+and [Bilibili](https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.999.0.0&vd_source=a8d0e44de333f8637b7ce90ebf6dc54c)
+
+
+
+copy the original one with a new underscore copy for comparsine
 `cp 020_disk_usage.py 020_disk_usage_original.py'
 and another one with underscore fixed to modify 
 `cp 020_disk_usage.py 020_disk_usage_fixed.py`
@@ -20,11 +32,19 @@ write the difference into *.diff file
 `diff -u 020_disk_usage_original.py 020_disk_usage_fixed.py > 021_disk_usage.diff`
 
 
-### Initialize Git
 
-show the global configrations
+[Click Back to top](#top)
+
+-----------------------------
+<div id="h2"></div>
+
+# 2. Initialize Git
+
+show the global configurations
 `git config --global --list`
-We can also set differnet username and email for different repository
+We can also set different username and email for different repositories Then, set the username and email with following command line
+`git config --global user.email "example@example.com`
+`git config --global user.name "example"`
 
 Initialize a fresh new repository with `git init`
 ![diff](/100_images/02.png)
@@ -34,7 +54,7 @@ A database for your Git project
 ![diff](/100_images/03.png)
 
 
-To make file on track `git add <filename>` and then we added this file from working tree/work brenche to staging area. A staging area(index) is a file maintained by Git that contains all of the information about files and changes are going to go into your next commit.
+To make files on track `git add <filename>` and then we added this file from working tree/work brenche to staging area. A staging area(index) is a file maintained by Git that contains all of the information about files and changes are going to go into your next commit.
 
 Use `git status` to check current working tree and pending changes.
 From the screenshot, you can see most of files are not tracked by git
@@ -75,6 +95,11 @@ git commit -m 'add new function'
 
 `git log` can present pasted commit history.
 <br></br>
+
+[Click Back to top](#top)
+
+-----------------------------
+
 
 ### Skip Staging
 `git commit -a -m 'message sentence'` only works only old file. If the file is untracked yet, we can't use this command to commit. If the file has never been commited to the repo, we'll stil need to use git add to track it first.
